@@ -11,5 +11,7 @@
  
 ` AmericanTypewriter.ttc ` => Default font I found;
  
- You can change USING_FONT in includes/urgatlenCONST.h so you can try the 2 differents fonts.
+ You can change USING_FONT in includes/urgatlenCONST.h so you can try the 2 differents fonts, create your own define for other fonts or even create your own font and use it ! You can also commit it so anyone can try it ^^
+ 
+ PS: I created my own font in www.calligraphr.com
  
