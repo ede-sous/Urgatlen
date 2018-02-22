@@ -4,7 +4,7 @@
  The goal of this was to be able to write on the SDL graphic window and then add my own alphabet.
  
  
- There is 2 fonts :
+ There are 2 fonts :
  
  ` Urgatlen.tff ` => My own alphabet;
  ` AmericanTypewriter.ttc ` => Default font I found;
