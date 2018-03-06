@@ -6,7 +6,7 @@
 /*   By: ede-sous <ede-sous@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/15 01:43:50 by ede-sous          #+#    #+#             */
-/*   Updated: 2018/02/27 10:16:22 by ede-sous         ###   ########.fr       */
+/*   Updated: 2018/03/06 08:36:31 by ede-sous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,6 @@ void			x_RenderCopy(t_urgatx *type, t_obj *tmp)
 	{
 		if (tmp->pos.y >= 0 && tmp->letter[0] != 10)
 			SDL_RenderCopyEx(type->render, tmp->texture, NULL, &tmp->pos, 0, NULL, 0);
-		// else if (tmp->pos.y >= 0)
-		// 	SDL_RenderCopyEx(type->render, tmp->texture, NULL,)
 
 		tmp = tmp->next;
 	}
