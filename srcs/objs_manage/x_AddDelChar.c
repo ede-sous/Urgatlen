@@ -6,7 +6,7 @@
 /*   By: ede-sous <ede-sous@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/15 07:51:11 by ede-sous          #+#    #+#             */
-/*   Updated: 2018/02/16 01:22:23 by ede-sous         ###   ########.fr       */
+/*   Updated: 2018/02/27 10:05:20 by ede-sous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@ int				x_DelChar(t_urgatx *type)
 	type->tmp = type->last;
 	type->last = type->last->prev;
 	(type->last ? (type->last->next = NULL) : (type->head = NULL));
-	
-	type->tmp->letter = 0;
+
+	bzero(type->tmp->letter, 2);
 	type->tmp->prev = NULL;
 	
 	SDL_DestroyTexture(type->tmp->texture);

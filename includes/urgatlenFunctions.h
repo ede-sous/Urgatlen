@@ -6,7 +6,7 @@
 /*   By: ede-sous <ede-sous@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/14 23:11:39 by ede-sous          #+#    #+#             */
-/*   Updated: 2018/02/22 08:31:35 by ede-sous         ###   ########.fr       */
+/*   Updated: 2018/03/06 06:34:31 by ede-sous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,13 @@ void			x_RenderCopy(t_urgatx *type, t_obj *tmp);
 int				x_ValidChar(t_urgatx *type);
 int				x_ValidKey(t_urgatx *type);
 void			x_KeyToChar(t_urgatx *type);
+
+/*
+**				File functions
+*/
+
+int				x_CreateFile(t_urgatx *type);
+void			x_strdel(char **str);
 
 /*
 **				Parser functions

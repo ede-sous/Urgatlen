@@ -6,7 +6,7 @@
 /*   By: ede-sous <ede-sous@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/14 23:13:41 by ede-sous          #+#    #+#             */
-/*   Updated: 2018/02/18 23:33:03 by ede-sous         ###   ########.fr       */
+/*   Updated: 2018/03/06 06:38:31 by ede-sous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@
 
 # define WIN_WIDTH				1024
 # define WIN_HEIGHT				720
-# define CHAR_SIZE				16
+
+# define TEXT_DIR				"texts"
+# define TEXT_FILE				"text_"
 
 /*
 **		Font Defines
@@ -27,7 +29,14 @@
 
 # define DEFAULT_FONT			"assets/AmericanTypewriter.ttc"
 # define URGATLEN_FONT			"assets/Urgatlen.ttf"
-# define USING_FONT				URGATLEN_FONT
+
+# ifdef	URGATLEN
+	# define USING_FONT			URGATLEN_FONT
+	# define CHAR_SIZE			16
+# else
+	# define USING_FONT			DEFAULT_FONT
+	# define CHAR_SIZE			10
+# endif
 
 /*
 **		Const Defines

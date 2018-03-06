@@ -6,7 +6,7 @@
 /*   By: ede-sous <ede-sous@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/15 01:04:39 by ede-sous          #+#    #+#             */
-/*   Updated: 2018/02/15 08:29:10 by ede-sous         ###   ########.fr       */
+/*   Updated: 2018/02/27 10:17:09 by ede-sous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ typedef struct		s_obj
 {
 	SDL_Surface		*surface;
 	SDL_Texture		*texture;
-	char			letter;
+	SDL_Rect		pos;
+	char			letter[2];
 	struct s_obj	*next;
 	struct s_obj	*prev;
 }					t_obj;
