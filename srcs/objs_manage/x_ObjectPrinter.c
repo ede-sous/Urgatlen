@@ -6,7 +6,7 @@
 /*   By: ede-sous <ede-sous@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/15 01:43:50 by ede-sous          #+#    #+#             */
-/*   Updated: 2018/03/06 08:36:31 by ede-sous         ###   ########.fr       */
+/*   Updated: 2018/03/13 10:27:10 by ede-sous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void			x_RenderCopy(t_urgatx *type, t_obj *tmp)
 	x_SetPosition(type, NULL, 0);
 
 	tmp = type->head;
-	while (tmp)
+	while (tmp && tmp->pos.y < WIN_HEIGHT)
 	{
 		if (tmp->pos.y >= 0 && tmp->letter[0] != 10)
 			SDL_RenderCopyEx(type->render, tmp->texture, NULL, &tmp->pos, 0, NULL, 0);

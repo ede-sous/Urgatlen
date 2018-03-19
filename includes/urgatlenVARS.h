@@ -6,7 +6,7 @@
 /*   By: ede-sous <ede-sous@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/15 01:04:39 by ede-sous          #+#    #+#             */
-/*   Updated: 2018/02/27 10:17:09 by ede-sous         ###   ########.fr       */
+/*   Updated: 2018/03/13 10:23:14 by ede-sous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ typedef struct		s_urgatx
 	SDL_Event		event;
 	TTF_Font		*font;
 	t_obj			*head, *tmp, *last;
+	SDL_Rect		cursor;
 	const Uint8 	*keys;
 }					t_urgatx;
 
